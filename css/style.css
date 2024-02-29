@@ -9,6 +9,8 @@ body{
     padding: 0 16px;
 }
 
+
+
 .btn {
     color: rgb(255, 255, 255);
     font-size: 20px;
@@ -21,12 +23,26 @@ body{
     width: 100%;
 }
 
-/*--------------------------------------------------*/
-.header {
-    
-
-
+@media (min-width: 500px) {
+    .btn {
+        width: auto;
+    }
 }
+
+@media (min-width: 768px) {
+    .container{
+        padding: 0 60px;
+    }
+}
+
+@media (min-width: 1441px) {
+    .container{
+        margin: 0 auto;
+    }
+}
+
+/*--------------------------------------------------*/
+
 
 .header__title {
     background: rgb(255, 170, 76);
@@ -47,8 +63,7 @@ body{
     background: rgb(24, 24, 24);
 }
 
-.header__inner {
-}
+
 .header__slogan {
     display: flex;
     justify-content: space-between;
@@ -76,15 +91,15 @@ body{
     background: rgb(255, 255, 255);
     box-shadow: 0 9px 0 0 rgb(255, 255, 255), 0 18px 0 0 rgb(255, 255, 255);
 }
-
-.header__content {
-    
-    
+.header__content{
+    margin-top: 51px;
 }
+
 .header__content-title {
     color: rgb(255, 255, 255);
     text-align: left;
-    margin-top: 51px;
+    
+
 
 }
 .title {
@@ -95,22 +110,65 @@ body{
     text-align: left;
     
 }
+.title span{
+    letter-spacing: 0.1px;
+}
 .header__content-text {
+    font-size: clamp(1rem, 0.912rem + 0.38vw, 1.25rem);
     line-height: 1.25;
     margin: 20px 0 40px;
-
+    max-width: 534px;
 }
-.header__content-img{
-    margin-top: 54px;
 
+.header__content-img {
+    background: url(../img/Vector270.svg) no-repeat ;
+    background-size: 116%;
+    background-position: -59% 40px;
+    margin-right: -15px;
+    margin-top: 123px;
+    overflow: hidden;
+    position: relative;
+}
 
-
+.header__content-img::after{
+    content: "";
+    background: rgb(24, 24, 24);
+    display: block;
+    width: 100%;
+    height: 13.5%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
 }
 
 .header__img {
-    width: 100%;
-    height: 100%;
-
-
-
+    width: 65%;
+    margin-left: 16%
 }
+@media (min-width:768px){
+    .header__content-img {
+        margin-right: -60px;
+    }
+}
+
+@media (min-width:1024px) {
+    .header__content{
+        display: flex;
+        margin-top: 82px;
+        justify-content: space-between;
+        padding-left: 40px;
+    }
+    .header__content-img {
+        margin: 0;
+        margin-right: -60px;
+        flex-basis: 51%;
+        margin-top: -10px;
+        background-size: 134%;
+        background-position: -27% 21%;
+    }
+    .header__img{
+        width: 74%;
+        margin-left: 12%;
+    }
+}
+
