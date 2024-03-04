@@ -93,6 +93,7 @@ body{
 }
 .header__content{
     margin-top: 51px;
+    flex-basis: 60%;
 }
 
 .header__content-title {
@@ -121,6 +122,80 @@ body{
 }
 
 .header__content-img {
+    display: block;
+    overflow: hidden;
+    flex-basis: 46%;
+}
+
+.header__img {
+    width: 110%;
+    margin-left: 52px;
+    margin-top: 123px;
+}
+
+
+@media (min-width:1024px) {
+
+    .header__inner{
+        margin-top: 82px;
+        display: flex;
+    }
+    .header__content{
+        margin: 0;
+        margin-right: -60px;
+    }
+    
+    .header__content-img{
+        margin-top: -19px;
+    }
+    .header__img {
+        margin: 0 0 0 34px;
+        width: 141%;
+
+        
+    }
+    
+}
+@media (min-width:1366px){
+    .header__content{
+        margin-left: 50px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*.header__content-img {
     background: url(../img/Vector270.svg) no-repeat ;
     background-size: 116%;
     background-position: -59% 40px;
@@ -159,10 +234,8 @@ body{
         padding-left: 40px;
     }
     .header__content-img {
-        margin: 0;
-        margin-right: -60px;
-        flex-basis: 51%;
         margin-top: -10px;
+        flex-basis: 51%;
         background-size: 134%;
         background-position: -27% 21%;
     }
