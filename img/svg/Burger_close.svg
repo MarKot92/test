@@ -1,0 +1,14 @@
+<svg width="40.000000" height="40.000000" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<clipPath id="clip1_12780">
+			<rect id="Burger" width="40.000000" height="40.000000" fill="white" fill-opacity="0"/>
+		</clipPath>
+	</defs>
+	<g clip-path="url(#clip1_12780)">
+		<rect id="Rectangle 3231" x="12.221680" y="10.807617" rx="1.000000" width="24.000000" height="2.000000" transform="rotate(45 12.221680 10.807617)" fill="#FFFFFF" fill-opacity="1.000000"/>
+		<rect id="Rectangle 3232" rx="1.000000" width="24.000000" height="2.000000" transform="matrix(-0.707107 0.707107 0.707107 0.707107 27.7783 10.8076)" fill="#FFFFFF" fill-opacity="1.000000"/>
+	</g>
+</svg>

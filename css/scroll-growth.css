@@ -1,0 +1,132 @@
+
+
+.scroll {
+    display: flex;
+    flex-direction: column;
+    gap: 93px;
+    padding: 101px 0 140px;
+    position: relative;
+    width: 100%;
+}
+.scroll__item {
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    user-select: none;
+    gap: 20px;
+}
+.scroll__list {
+    flex-shrink: 0;
+    display: flex;
+    gap: 20px;
+    counter-reset: item;
+    justify-content: space-around;
+    min-width: 100%;
+    animation: scroll 130s linear infinite;
+}
+.scroll__item_bias {
+    margin-left: -50vw;
+}
+.scroll__list_reverse{
+    animation-direction: reverse;
+}
+.item {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(47, 219, 188);
+    font-size: clamp(3rem, 1.239rem + 7.51vw, 8rem);
+    font-weight: 700;
+    line-height: 1.06;
+    transition: all 0.1s ease-in-out;
+}
+.item_stroke {
+    -webkit-text-stroke: 1px #444444;
+    color: rgb(24, 24, 24);
+}
+.item_violet {
+    color: rgb(166, 76, 237);
+}
+.item_orange {
+    color: rgb(255, 170, 76);
+}
+
+@keyframes scroll {
+    from { 
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+    
+}
+
+.scroll__image{
+    position: absolute;
+    z-index: 3;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    max-width: clamp(14.25rem, 12.489rem + 7.51vw, 19.25rem);
+    
+
+}
+
+@media (min-width:1024px) {
+    .scroll {
+        padding: 146px 0;
+        gap: 68px;
+    }
+}
+
+
+
+/*------------------------------------------------*/
+
+
+
+.growth {
+    padding: 40px 0 40px;
+    background: rgb(149, 76, 237);
+}
+.growth__block {
+    color: rgb(255, 255, 255);
+    font-size: clamp(1.25rem, 1.162rem + 0.38vw, 1.5rem);
+    font-weight: 600;
+    line-height: 1.2;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.growth__item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-right: -3px;
+    
+
+
+}
+
+.item__span{
+    font-size: clamp(2.5rem, 1.972rem + 2.25vw, 4rem);
+    font-weight: 700;
+    line-height: 1.06;
+    align-self: flex-start;
+
+}
+
+@media (min-width:790px){
+    .growth__block {
+        flex-direction: row;
+        gap: 100px;
+        justify-content: space-between;
+        max-width: 741px;
+        margin: 0  auto;
+
+    }
+    .growth__item {
+        flex-direction: column;
+        margin: 0;
+        max-width: 217px;
+
+    }
+}

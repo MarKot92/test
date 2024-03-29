@@ -1,0 +1,135 @@
+.form {
+    display: none;
+    padding: 20px 16px;
+    border-radius: 20px;
+    background: rgb(255, 255, 255);
+    margin: 0 20px;
+    position: relative;
+    max-width: 417px;
+    max-height: 699px;
+    bottom: 5vh;
+}
+
+.form_open{
+    display: block;
+}
+.form_close {
+    background: url(../img/svg/cross.svg) no-repeat center;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 11px;
+    right: 19px;
+}
+
+.form__user {
+    display: flex; 
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form__user_close{
+    display: none;
+}
+
+.ladel-title {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.57;
+    color: #070707;
+}
+.ladel-title_orange{
+    color: #FF6C2D;
+}
+.label-text{
+    color: rgb(236, 18, 17);
+    font-size: 12px;
+    line-height: 1.66;
+}
+
+.label-text_big{
+    font-size: 16px;
+}
+
+.data {
+    padding: 10px 16px;
+    height: 40px;
+    width: 100%;
+    border: 1px solid rgb(241, 241, 241);
+    border-radius: 14px;
+    margin: 4px 0;
+}
+
+.data:active,
+.data:focus-visible{
+    border: 1px solid rgb(167, 167, 167);
+}
+.data_error{
+    border: 1px solid rgb(236, 18, 17);
+}
+
+.data:disabled {
+    color: rgb(167, 167, 167);
+    border: 1px solid rgb(241, 241, 241);
+}
+
+.flag {
+    background: url(../img/svg/rus_flag.svg) 16px 50% no-repeat ;
+    background-size: 24px;
+    padding-left: 50px;
+}
+.form__text {
+    padding: 10px 0;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.4;
+    color: #000000;
+}
+.form__text a{
+    color: #954CED;
+    text-decoration: underline;
+}
+
+
+
+
+
+.form__result {
+    display: none;
+    padding: 20px 24px;
+}
+
+.form__result_open{
+    display: block;
+}
+.form__img {
+    display: block;
+    margin: 19px auto 20px;
+
+}
+.form__caption {
+    color: rgb(166, 76, 237);
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.2;
+    text-align: center;
+}
+.form__subtitle {
+    color: rgb(68, 68, 68);
+    font-size: 20px;
+    line-height: 1.2;
+    text-align: center;
+    margin: 20px -20px;
+    min-width: 295px;
+}
+.btn_width{
+    width: 100%;
+}
+@media (min-width:1024px) {
+    .form{
+        padding: 40px;
+    }
+    .form__result {
+        padding: 0;
+    }
+}

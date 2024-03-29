@@ -1,0 +1,137 @@
+
+body{
+    font-family: "Outfit", sans-serif;
+    background: rgb(24, 24, 24);    
+}
+
+.container{
+    min-width: 288px;
+    padding: 0 16px;
+}
+
+
+
+
+@media (min-width: 768px) {
+    .container{
+        padding: 0 60px;
+    }
+}
+
+@media (min-width: 1441px) {
+    .container{
+        margin: 0 auto;
+    }
+}
+
+/*--------------------------------------------------*/
+
+
+
+.header{
+    position: relative;
+
+}
+
+.header_close{
+    display: none;
+}
+
+
+.header__title {
+    background: rgb(255, 170, 76);
+    min-height: 38px;
+    width: 100%;
+    display: flex;
+
+}
+.header__title-text {
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+    line-height: 1.25;
+    padding: 9px 40px;
+}
+.header__title-text_color {
+    color: rgb(255, 255, 255);
+    border-radius: 20px 20px 0px 0px;
+    background: rgb(24, 24, 24);
+}
+
+/*------------------------slogan----------------*/
+.main__slogan {
+    background: rgb(24, 24, 24);
+    min-height: 72px;
+    position: sticky;
+    top: -1px;
+    z-index: 4;
+
+}
+.slogan__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 72px;
+}
+
+.slogan__btn-burger {
+    background: rgb(24, 24, 24);
+}
+
+.slogan__article {
+    border: 1px solid rgb(149, 76, 237);
+    border-radius: 16px;
+    padding: 16px 30px;
+    display: none;
+    flex-direction: row;
+    gap: 14px;
+}
+.slogan__article_open{
+    display: flex;
+}
+
+@media (hover: hover) {
+    .icon-google:hover,
+    .icon-apple:hover {
+    transform: scale(1.2);
+}
+    
+}
+
+
+
+@media (min-width:768px) {
+    .slogan__btn-burger {
+        display: none;
+    }
+}
+
+@media (max-width:767px) {
+    .slogan__article {
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
